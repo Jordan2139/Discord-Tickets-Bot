@@ -1,0 +1,10 @@
+{
+
+    "main": {
+        "name": "HypeTickets",
+        "commands": "12",
+        "events": "3",
+        "support": "https://support.hyperz.dev/"
+    }
+
+}
