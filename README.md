@@ -1,4 +1,4 @@
-Do you want an advanced and helpful Ticket System to better suit your servers needs? Well, look no further! With HypeTickets you can do everything from Basic Ticket Commands, all the way to reaction based ticket panels! With a configurable role-based permissions system, you can ensure that nobody gets to running commands that they shouldn't have access to!
+Do you want an advanced and helpful Ticket System to better suit your servers needs? Well, look no further! With Discord-Tickets-Bot you can do everything from Basic Ticket Commands, all the way to reaction based ticket panels! With a configurable role-based permissions system, you can ensure that nobody gets to running commands that they shouldn't have access to!
 
 ---
 
