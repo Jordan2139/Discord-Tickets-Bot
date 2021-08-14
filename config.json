@@ -27,7 +27,10 @@
         "ticketThumbnailURL": "",
 
         "ticketscategoryid": "your-tickets-category-id",
-        "newticketmessage": "We have created your ticket! Please wait for a staff member to enter the ticket!"
+        "newticketmessage": "We have created your ticket! Please wait for a staff member to enter the ticket!",
+
+        "mentions": true,
+        "mentionid": ["your-role-ids"]
     },
 
     "permissions_config": {
