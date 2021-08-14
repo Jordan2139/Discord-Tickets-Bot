@@ -87,6 +87,15 @@ module.exports = {
                         .setTimestamp()
                         .setFooter(`${config["main_config"].copyright}`)
 
+                    if (config.tickets_config.mentions) {
+                        if (config.tickets_config.mentionid) {
+                            config.tickets_config.mentionid.forEach(role => {
+                                message.channel.send(`<@${role}>`).catch(e => { if (config["main_config"].debugmode) return console.log(e); });
+                            })
+                        } else {
+                            console.log('HEY RETARD, IF YOU WANT ME TO PING YOU WHEN I CREATE A TICKET YOU GOTTA FUCKIN GIVE ME A ROLE TO MENTION! MONKEY!')
+                        }
+                    }
                     chan.send(ticketchannelembed2)
                     message.delete().catch(e => { if (config["main_config"].debugmode) return console.log(e); });
                 }
