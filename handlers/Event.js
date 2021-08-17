@@ -1,3 +1,9 @@
+/* Credits:
+ Physical Programming: Hyperz#0001
+ Im horny lol - Jordan.#2319
+ buy me redbull lol - https://cash.app/$j2139 | https://paypal.me/jordan2139
+*/
+
 const fs = require('fs')
 
 module.exports = (client, Hyperz, config) => {
@@ -12,3 +18,9 @@ module.exports = (client, Hyperz, config) => {
         }
         ['client', 'guild'].forEach(e => load_dir(e));
 }
+
+/* Credits:
+ Physical Programming: Hyperz#0001
+ Im horny lol - Jordan.#2319
+ buy me redbull lol - https://cash.app/$j2139 | https://paypal.me/jordan2139
+*/

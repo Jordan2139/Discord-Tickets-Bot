@@ -1,34 +1,46 @@
+/* Credits:
+ Physical Programming: Hyperz#0001
+ Im horny lol - Jordan.#2319
+ buy me redbull lol - https://cash.app/$j2139 | https://paypal.me/jordan2139
+*/
+
 const fs = require('fs');
 const ms = require('ms');
 const wait = require('util').promisify(setTimeout);
 const { startupScreen } = require('../../util/boot.js');
 let i = 0;
 
-module.exports = (client, Hyperz, config) =>{
-  
-  let daPort = config["main_config"].port
+module.exports = (client, Hyperz, config) => {
 
-        const express = require("express");
-        const app = express()
-        app.listen(daPort)
+    let daPort = config["main_config"].port
 
-  startupScreen(client);
-  changeStatus(client, config)
+    const express = require("express");
+    const app = express()
+    app.listen(daPort)
 
-  async function changeStatus(client, config) {
-    if (i >= config.presence_config.length) i = 0;
-    await client.user.setPresence({
-        activity: {
-            name: config.presence_config[i].name,
-            type: config.presence_config[i].type
-        },
-        status: config.presence_config[i].status
-    });
-    i++;
-    setTimeout(() => {
-        changeStatus(client, config);
-    }, 10000)
+    startupScreen(client);
+    changeStatus(client, config)
 
-};
+    async function changeStatus(client, config) {
+        if (i >= config.presence_config.length) i = 0;
+        await client.user.setPresence({
+            activity: {
+                name: config.presence_config[i].name,
+                type: config.presence_config[i].type
+            },
+            status: config.presence_config[i].status
+        });
+        i++;
+        setTimeout(() => {
+            changeStatus(client, config);
+        }, 10000)
+
+    };
 
 }
+
+/* Credits:
+ Physical Programming: Hyperz#0001
+ Im horny lol - Jordan.#2319
+ buy me redbull lol - https://cash.app/$j2139 | https://paypal.me/jordan2139
+*/

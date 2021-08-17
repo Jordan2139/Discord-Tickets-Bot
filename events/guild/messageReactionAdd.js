@@ -1,3 +1,9 @@
+/* Credits:
+ Physical Programming: Hyperz#0001
+ Im horny lol - Jordan.#2319
+ buy me redbull lol - https://cash.app/$j2139 | https://paypal.me/jordan2139
+*/
+
 const fs = require('fs');
 
 module.exports = async(client, Hyperz, config, reaction, user) => {
@@ -118,3 +124,9 @@ module.exports = async(client, Hyperz, config, reaction, user) => {
         if (config["main_config"].debugmode) return console.log(e);
     }
 }
+
+/* Credits:
+ Physical Programming: Hyperz#0001
+ Im horny lol - Jordan.#2319
+ buy me redbull lol - https://cash.app/$j2139 | https://paypal.me/jordan2139
+*/
